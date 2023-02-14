@@ -2,9 +2,9 @@ pipeline {
   agent any
   
   stages {
-    stage('Git fatch') {
+    stage('Git fetch') {
       steps {
-        echo 'Git fatch'
+        echo 'Git fetch'
         git url: 'https://github.com/KHS-SK/spring-petclinic/',
           branch: 'main', credentialsId: 'gitCredential'
       }
